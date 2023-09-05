@@ -5,9 +5,9 @@ In this project, a client can request a file or a set of files from the server. 
 List of Client Commands:
 
 1. fgets file1 file2 file3 file4
-- The server must search the files (file 1 ..up to file4) in its directory tree rooted at ~ and return temp.tar.gz that contains at least one (or more of the listed files) if they are present.
-- If none of the files are present, the server sends “No file found” to the client (which is then printed on the client terminal by the client)
-- Ex: C$ fgets new.txt ex1.c ex4.pdf
++ The server must search the files (file 1 ..up to file4) in its directory tree rooted at ~ and return temp.tar.gz that contains at least one (or more of the listed files) if they are present.
++ If none of the files are present, the server sends “No file found” to the client (which is then printed on the client terminal by the client)
++ Ex: C$ fgets new.txt ex1.c ex4.pdf
 
 2. tarfgetz size1 size2 <-u>
 - The server must return to the client temp.tar.gz that contains all the files in the directory tree rooted at its ~ whose file-size in bytes is >=size1 and <=size2 and size1 < = size2 (size1>= 0 and size2>=0).
